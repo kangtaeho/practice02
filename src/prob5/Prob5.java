@@ -7,14 +7,18 @@ public class Prob5 {
 
 	public static void main(String[] args) {
 		
-		System.out.println("수를 결정하였습니다. 맞추어 보세요(1~100) : ");
-		
 		//Randomize 하기
-		Random random = new Random(100);
+		Random random = new Random();
 		int number = random.nextInt(100);// 넣어준 값이 100이면 0~99까지의 임의 수 가 나옴
 		
+		System.out.println("random에서 임의로 뽑은 수 : "+number+"\n");
+		
+		System.out.println("수를 결정하였습니다. 맞추어 보세요(1~100) : ");
+		
 		int i = 1;
+		
 		while(true){	
+			
 		Scanner scanner = new Scanner(System.in);
 		System.out.print(i+">>");
 		String answer= scanner.nextLine();

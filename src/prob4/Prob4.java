@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class Prob4 {
 
 	public static void main(String[] args) {
+		
+		System.out.println("문자를 입력하세요 : ");
 		Scanner scanner = new Scanner(System.in);
 		String s = scanner.nextLine();
 		
